@@ -40,8 +40,9 @@ d <- aggregate(steps ~ date,data = df,FUN=sum)
 
 ```
 
+
 display histogram of steps per day
-```{r echo=TRUE}
+```{r steps1 ,echo=TRUE}
 
 hist(d$steps,xlab="Steps",main="Steps Per Day")
 ```

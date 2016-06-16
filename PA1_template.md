@@ -58,13 +58,14 @@ Calculate the total number of steps taken per day
 d <- aggregate(steps ~ date,data = df,FUN=sum)
 ```
 
+
 display histogram of steps per day
 
 ```r
 hist(d$steps,xlab="Steps",main="Steps Per Day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)
+![](PA1_template_files/figure-html/steps1 -1.png)
 
 get and display the mean and median number of steps per day
 
@@ -101,7 +102,7 @@ plot(di$interval, di$steps, type = "l", xlab = "5-min interval",
     )
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)
 
 
 determine which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps
@@ -165,7 +166,7 @@ d2 <- aggregate(steps ~ date,data = df2,FUN=sum)
 hist(d2$steps,xlab="Steps",main="Steps Per Day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)
 
 ```r
 mean(d2$steps)
@@ -218,7 +219,7 @@ xyplot(steps ~ interval | dayofweek, d3, type = "l", layout = c(1, 2),
     xlab = "Interval", ylab = "Number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)
 
 Activity on the weekends shows more spurts of high activity throughout the day while the weekday data has one major peak period with more contiguous periods of less activity. This corresponds to people being less active during working hours and very active before work.
 
